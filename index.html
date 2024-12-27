@@ -1,0 +1,103 @@
+// index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blake McAlister - Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#resume">Resume</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <section id="home">
+        <div class="container">
+            <img src="BlakeSmiles.png" alt="Profile Picture" class="profile-img">
+            <h1 class="title">Blake McAlister</h1>
+            <p>Computer Science Student | Interested in Machine Learning/AI and Software Development</p>
+            <div class="contact-info">
+                <a href="mailto:blake.mcalister25@gmail.com" class="contact-link">
+                    <i class="fas fa-envelope"></i> blake.mcalister25@gmail.com
+                </a>
+                <a href="tel:4047895463" class="contact-link">
+                    <i class="fas fa-phone"></i> (404) 789-5463
+                </a>
+                <a href="https://www.linkedin.com/in/blakemcalister25/" target="_blank" class="contact-link">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2 class="title">About Me</h2>
+            <div class="about-content">
+                <p>Welcome! I'm Blake, a dedicated computer science student with a deep passion for the tech world, particularly in machine learning, AI, and software engineering. I specialize in Python, supported by foundational knowledge in C, C++, HTML, Javascript, and CSS. I thrive on creating impactful projects that make a difference.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2 class="title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Flask Web Application</h3>
+                    <p>User Notes Management system implemented using Flask framework, enabling efficient note organization and management.</p>
+                    <a href="https://github.com/BK-Alister/Flask-Web-App/tree/main" target="_blank" class="project-link">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>Spotify Playlist Fetcher</h3>
+                    <p>Python application using Spotipy for Spotify API integration and Flask, enabling playlist management with OAuth 2.0 authentication.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume">
+        <div class="container resume-container">
+            <h2 class="title">Resume</h2>
+            <div class="resume-preview">
+                <img src="resume.jpg" alt="Blake McAlister Resume" class="resume-img">
+                <a href="Resume Blake McAlister 2024.11.16.pdf" download class="download-btn">Download PDF</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2 class="title">Contact Me</h2>
+            <form class="contact-form" id="contact-form" action="https://formspree.io/f/xzzzebeq" method="POST">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p class="copyright">© 2024 Blake McAlister. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/your-kit-code.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
