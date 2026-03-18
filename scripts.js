@@ -1,35 +1,70 @@
-// script.js remains the same as before
-// Smooth scrolling for navigation links
+// ── Smooth scroll ────────────────────────────────────────────────
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (!target) return;
         e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoElement({
-            behavior: 'smooth'
-        });
+        target.scrollIntoView({ behavior: 'smooth' });
+        // close mobile menu if open
+        mobileMenu.classList.remove('open');
     });
 });
 
-// Resume upload handling
-document.getElementById('resume-upload').addEventListener('change', function(e) {
-    const file = e.target.files[0];
-    if (file && file.type === 'application/pdf') {
-        const reader = new FileReader();
-        reader.onload = function(e) {
-            const preview = document.getElementById('resume-preview');
-            preview.innerHTML = `
-                <p style="color: var(--primary); margin-top: 1rem;">
-                    Uploaded: ${file.name}
-                </p>
-            `;
-        };
-        reader.readAsDataURL(file);
-    }
+// ── Mobile hamburger menu ────────────────────────────────────────
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobile-menu');
+
+hamburger.addEventListener('click', () => {
+    const isOpen = mobileMenu.classList.toggle('open');
+    hamburger.setAttribute('aria-expanded', isOpen);
 });
 
-// Contact form handling
-document.getElementById('contact-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    // Add your form submission logic here
-    alert('Message sent successfully!');
-    this.reset();
-});
+// ── Scroll-reveal (IntersectionObserver) ────────────────────────
+const revealEls = document.querySelectorAll(
+    '.project-card, .about-body, .resume-wrap, .contact-form, .contact-left, .pill, .skill-col'
+);
+
+revealEls.forEach(el => el.classList.add('reveal'));
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+            // stagger siblings slightly
+            const delay = Array.from(entry.target.parentElement.children)
+                .indexOf(entry.target) * 80;
+            setTimeout(() => {
+                entry.target.classList.add('visible');
+            }, delay);
+            observer.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.12 });
+
+revealEls.forEach(el => observer.observe(el));
+
+// ── Nav shrink on scroll ─────────────────────────────────────────
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => {
+    nav.style.background = window.scrollY > 40
+        ? 'rgba(10,10,10,0.97)'
+        : 'rgba(10,10,10,0.85)';
+}, { passive: true });
+
+// ── Active nav link highlight ─────────────────────────────────────
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.nav-links a');
+
+const sectionObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const id = entry.target.getAttribute('id');
+            navLinks.forEach(link => {
+                link.style.color = link.getAttribute('href') === `#${id}`
+                    ? 'var(--accent)'
+                    : '';
+            });
+        }
+    });
+}, { threshold: 0.4 });
+
+sections.forEach(s => sectionObserver.observe(s));
