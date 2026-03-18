@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blake McAlister - Portfolio Website</title>
+    <title>Blake McAlister Computer Science Student</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <nav>
         <div class="nav-links">
             <a href="#home">Home</a>
@@ -22,7 +23,8 @@
         <div class="container">
             <img src="BlakeSmiles.png" alt="Profile Picture" class="profile-img">
             <h1 class="title">Blake McAlister</h1>
-            <p>Computer Science Student | Interested in Machine Learning/AI and Software Development</p>
+            <p>Software Engineer| AI, Machine Learning, and Systems</p>
+
             <div class="contact-info">
                 <a href="mailto:blake.mcalister25@gmail.com" class="contact-link">
                     <i class="fas fa-envelope"></i> blake.mcalister25@gmail.com
@@ -41,7 +43,12 @@
         <div class="container">
             <h2 class="title">About Me</h2>
             <div class="about-content">
-                <p>Welcome! I'm Blake, a dedicated computer science student with a deep passion for the tech world, particularly in machine learning, AI, and software engineering. I specialize in Python, supported by foundational knowledge in C, C++, HTML, Javascript, and CSS. I thrive on creating impactful projects that make a difference.</p>
+                <p>
+                    I am a computer science student focused on building intelligent systems and scalable software. 
+                    My work centers around machine learning, AI-driven applications, and real-time systems. 
+                    I enjoy taking ideas from concept to execution, especially projects that combine data, automation, 
+                    and user interaction to solve real-world problems.
+                </p>
             </div>
         </div>
     </section>
@@ -49,38 +56,62 @@
     <section id="projects">
         <div class="container">
             <h2 class="title">Projects</h2>
+
             <div class="projects-grid">
+
                 <div class="project-card">
-                    <h3>Flask Web Application</h3>
-                    <p>This project is a dynamic web application built using Flask, a lightweight and versatile Python web framework. The app demonstrates foundational web development concepts, including:
-                        Secure user registration, login, and logout functionality. Implementation of SQLAlchemy for managing and storing user data. A user-friendly interface styled with HTML, CSS, and Bootstrap for seamless usability on various devices. Demonstrates routing, templating, and handling HTTP requests.</p>
-                    <a href="https://github.com/BK-Alister/Flask-Web-App/tree/main" target="_blank" class="project-link">View Project</a>
+                    <h3>Urba: Environmental Intelligence Platform</h3>
+                    <p>
+                        Built at the NASA Space Apps Hackathon, Urba is a real-time environmental monitoring platform 
+                        that aggregates global disaster and environmental data into a unified system.
+                        <br><br>
+                        • Integrated NASA EONET and public APIs to track fires, air quality, and extreme weather in real time  
+                        • Developed a social feed for user-generated, location-based environmental reporting  
+                        • Engineered a city-level Wellness Score using aggregated environmental and community data  
+                        • Designed for rapid, mobile-first situational awareness
+                    </p>
+                    <a href="#" target="_blank" class="project-link">View Project</a>
                 </div>
+
                 <div class="project-card">
                     <h3>NBA AI Voice Assistant</h3>
-                    <p>This project is an AI-powered NBA Voice Assistant built using Python, LiveKit, and OpenAI technologies. Designed to provide engaging and accurate NBA-related information, the assistant can answer questions about team records, championship history, player positions, and legendary players.
-
-                        Key Features:
-                        Real-time voice interaction with speech-to-text and text-to-speech capabilities.
-                        Comprehensive NBA knowledge, including historical data and current season stats.
-                        AI-driven functionality for dynamic and conversational responses.</p>
+                    <p>
+                        AI-powered voice assistant delivering real-time and historical NBA insights through natural conversation.
+                        <br><br>
+                        • Built real-time voice pipeline using speech-to-text and text-to-speech  
+                        • Integrated LLM capabilities for dynamic and contextual responses  
+                        • Supports queries on teams, player stats, history, and game insights  
+                        • Designed for conversational accuracy and low-latency interaction
+                    </p>
                     <a href="https://github.com/BK-Alister/NBA-AI-Assistant" target="_blank" class="project-link">View Project</a>
                 </div>
-                <div class="project-card">
-                    <h3>BK's MP3 Player</h3>
-                    <p>This Python MP3 Player is a desktop application built with Tkinter for the interface and pygame for audio playback. It features folder-based .mp3 playback, dynamic playlist management, playback controls (play, pause, next, previous), shuffle functionality, and an intuitive, icon-based interface.</p>
-                    <a href="https://github.com/BK-Alister/BK-MP3" target="_blank" class="project-link">View Project</a>
-                </div>
-                <div class="project-card">
-                    <h3>BK's Stock Predictor</h3>
-                    <p>This project is a web-based Stock Price Predictor built with Python, Streamlit, and machine learning. The app allows users to input a stock symbol, view historical price data, analyze moving averages, and predict future stock prices using a Random Forest Regressor. Visualizations include comparisons of original and predicted prices, along with interactive charts for various moving averages (100, 200, and 250 days).
 
-                        Key Features:
-                        Dynamic stock data retrieval via Yahoo Finance API.
-                        Real-time data visualization with Matplotlib.
-                        Predictive modeling using scaled data and machine learning.</p>
-                    <a href="https://github.com/BK-Alister/Stock_MASTER" target="_blank" class="project-link">View Project</a>
+                <div class="project-card">
+                    <h3>Vision-Based Autonomous RC Car</h3>
+                    <p>
+                        Autonomous driving system using computer vision and real-time control on a TurboPi platform.
+                        <br><br>
+                        • Implemented lane detection and heading correction using OpenCV  
+                        • Built car-following system with distance estimation and safe stopping logic  
+                        • Added restart behavior for dynamic obstacle handling  
+                        • Validated performance through real-world testing and simulation environments
+                    </p>
+                    <a href="#" target="_blank" class="project-link">View Project</a>
                 </div>
+
+                <div class="project-card">
+                    <h3>Stock Price Predictor</h3>
+                    <p>
+                        Machine learning web application for stock forecasting and technical analysis.
+                        <br><br>
+                        • Built with Streamlit for interactive data exploration  
+                        • Retrieved live financial data using Yahoo Finance API  
+                        • Implemented predictive modeling using machine learning techniques  
+                        • Visualized moving averages (100, 200, 250 days) and trend patterns
+                    </p>
+                    <a href="#" target="_blank" class="project-link">View Project</a>
+                </div>
+
             </div>
         </div>
     </section>
@@ -90,7 +121,7 @@
             <h2 class="title">Resume</h2>
             <div class="resume-preview">
                 <img src="resume.jpg" alt="Blake McAlister Resume" class="resume-img">
-                <a href="Resume Blake McAlister CS.pdf" download class="download-btn">Download PDF</a>
+                <a href="Blake McAlister Resume BW.pdf" download class="download-btn">Download PDF</a>
             </div>
         </div>
     </section>
@@ -98,7 +129,7 @@
     <section id="contact">
         <div class="container">
             <h2 class="title">Contact Me</h2>
-            <form class="contact-form" id="contact-form" action="https://formspree.io/f/xzzzebeq" method="POST">
+            <form class="contact-form" action="https://formspree.io/f/xzzzebeq" method="POST">
                 <div class="form-group">
                     <input type="text" name="name" placeholder="Name" required>
                 </div>
@@ -115,11 +146,12 @@
 
     <footer>
         <div class="container">
-            <p class="copyright">© 2024 Blake McAlister. All rights reserved.</p>
+            <p class="copyright">© 2026 Blake McAlister. All rights reserved.</p>
         </div>
     </footer>
 
     <script src="https://kit.fontawesome.com/your-kit-code.js"></script>
     <script src="script.js"></script>
+
 </body>
 </html>
