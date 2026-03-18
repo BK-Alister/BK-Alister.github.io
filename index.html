@@ -5,153 +5,253 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blake McAlister Computer Science Student</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <nav>
-        <div class="nav-links">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#resume">Resume</a>
-            <a href="#contact">Contact</a>
+    <!-- Noise overlay -->
+    <div class="noise"></div>
+    <!-- Scan line -->
+    <div class="scanline"></div>
+
+    <nav id="nav">
+        <div class="nav-inner">
+            <span class="nav-logo">BM<span class="blink">_</span></span>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#resume">Resume</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
         </div>
     </nav>
 
+    <!-- Mobile drawer -->
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="#home" class="mob-link">Home</a>
+        <a href="#about" class="mob-link">About</a>
+        <a href="#projects" class="mob-link">Projects</a>
+        <a href="#resume" class="mob-link">Resume</a>
+        <a href="#contact" class="mob-link">Contact</a>
+    </div>
+
+    <!-- ───────── HERO ───────── -->
     <section id="home">
-        <div class="container">
-            <img src="BlakeSmiles.png" alt="Profile Picture" class="profile-img">
-            <h1 class="title">Blake McAlister</h1>
-            <p>Clemson University Student Software Engineer | AI, Machine Learning, and Systems</p>
-
-            <div class="contact-info">
-                <a href="mailto:blake.mcalister25@gmail.com" class="contact-link">
-                    <i class="fas fa-envelope"></i> blake.mcalister25@gmail.com
-                </a>
-                <a href="tel:4047895463" class="contact-link">
-                    <i class="fas fa-phone"></i> (404) 789-5463
-                </a>
-                <a href="https://www.linkedin.com/in/blakemcalister25/" target="_blank" class="contact-link">
-                    <i class="fab fa-linkedin"></i> LinkedIn
-                </a>
+        <div class="hero-grid">
+            <div class="hero-left">
+                <p class="hero-tag">[ Computer Science Clemson University ]</p>
+                <h1 class="hero-name">
+                    <span class="glitch" data-text="Blake">Blake</span><br>
+                    <span class="glitch accent-stroke" data-text="McAlister">McAlister</span>
+                </h1>
+                <p class="hero-sub">Software Engineer &amp; AI Researcher<br>Building intelligent, scalable systems.</p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn-primary">View Work</a>
+                    <a href="#contact" class="btn-ghost">Get in Touch →</a>
+                </div>
+                <div class="hero-contacts">
+                    <a href="mailto:blake.mcalister25@gmail.com">blake.mcalister25@gmail.com</a>
+                    <a href="tel:4047895463">(404) 789-5463</a>
+                    <a href="https://www.linkedin.com/in/blakemcalister25/" target="_blank">LinkedIn ↗</a>
+                    <a href="https://github.com/BK-Alister" target="_blank">GitHub ↗</a>
+                </div>
+            </div>
+            <div class="hero-right">
+                <div class="img-frame">
+                    <img src="BlakeSmiles.png" alt="Blake McAlister" class="profile-img">
+                    <div class="img-border"></div>
+                    <div class="img-tag">[ BLAKE MCALISTER / CS&nbsp;'25 ]</div>
+                </div>
+                <div class="stat-pills">
+                    <div class="pill">AI &amp; ML</div>
+                    <div class="pill">Systems</div>
+                    <div class="pill">Computer Vision</div>
+                    <div class="pill">Full-Stack</div>
+                </div>
             </div>
         </div>
+        <div class="scroll-hint">scroll ↓</div>
     </section>
 
+    <!-- ───────── ABOUT ───────── -->
     <section id="about">
-        <div class="container">
-            <h2 class="title">About Me</h2>
-            <div class="about-content">
-                <p>
-                    I am a computer science student focused on building intelligent systems and scalable software. 
-                    My work centers around machine learning, AI-driven applications, and real-time systems. 
-                    I enjoy taking ideas from concept to execution, especially projects that combine data, automation, 
-                    and user interaction to solve real-world problems.
-                </p>
+        <div class="section-inner">
+            <div class="section-label">// 01 — About</div>
+            <div class="about-layout">
+                <h2 class="section-heading">Turning ideas<br><em>into systems.</em></h2>
+                <div class="about-body">
+                    <p>
+                        I'm a Computer Science student at Clemson University focused on building intelligent systems and scalable software.
+                        My work sits at the intersection of machine learning, AI-driven applications, and real-time systems.
+                    </p>
+                    <p>
+                        I enjoy taking ideas from concept to execution — especially projects that combine data, automation, and user interaction
+                        to solve real-world problems. Whether it's an autonomous vehicle, a voice-powered NBA assistant, or an environmental
+                        monitoring platform, I'm energized by the full stack of challenges.
+                    </p>
+                    <div class="skills-row">
+                        <div class="skill-col">
+                            <span class="skill-label">Languages</span>
+                            <span>Python · C/C++ · Java · JavaScript</span>
+                        </div>
+                        <div class="skill-col">
+                            <span class="skill-label">ML / AI</span>
+                            <span>PyTorch · TensorFlow · OpenCV · LLMs</span>
+                        </div>
+                        <div class="skill-col">
+                            <span class="skill-label">Tools</span>
+                            <span>Git · Linux · React · Streamlit · APIs</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- ───────── PROJECTS ───────── -->
     <section id="projects">
-        <div class="container">
-            <h2 class="title">Projects</h2>
+        <div class="section-inner">
+            <div class="section-label">// 02 — Projects</div>
+            <h2 class="section-heading">Selected Work</h2>
 
             <div class="projects-grid">
 
-                <div class="project-card">
-                    <h3>Urba: Environmental Intelligence Platform</h3>
-                    <p>
-                        Built at the NASA Space Apps Hackathon, Urba is a real-time environmental monitoring platform 
-                        that aggregates global disaster and environmental data into a unified system.
-                        <br><br>
-                        • Integrated NASA EONET and public APIs to track fires, air quality, and extreme weather in real time  
-                        • Developed a social feed for user-generated, location-based environmental reporting  
-                        • Engineered a city-level Wellness Score using aggregated environmental and community data  
-                        • Designed for rapid, mobile-first situational awareness
-                    </p>
-                    <a href="#" target="_blank" class="project-link">View Project</a>
+                <div class="project-card featured" data-index="01">
+                    <div class="card-header">
+                        <span class="card-num">01</span>
+                        <div class="card-tags"><span>NASA Hackathon</span><span>APIs</span><span>Real-Time</span></div>
+                    </div>
+                    <h3>Urba: Environmental<br>Intelligence Platform</h3>
+                    <p>Real-time environmental monitoring platform that aggregates global disaster and environmental data. Built at the NASA Space Apps Hackathon, integrating NASA EONET and public APIs to track fires, air quality, and extreme weather.</p>
+                    <ul class="card-bullets">
+                        <li>City-level Wellness Score from aggregated environmental &amp; community data</li>
+                        <li>Social feed for user-generated location-based environmental reporting</li>
+                        <li>Designed for mobile-first rapid situational awareness</li>
+                    </ul>
+                    <a href="#" class="card-link">View Project ↗</a>
                 </div>
 
-                <div class="project-card">
+                <div class="project-card" data-index="02">
+                    <div class="card-header">
+                        <span class="card-num">02</span>
+                        <div class="card-tags"><span>AI</span><span>NLP</span><span>Voice</span></div>
+                    </div>
                     <h3>NBA AI Voice Assistant</h3>
-                    <p>
-                        AI-powered voice assistant delivering real-time and historical NBA insights through natural conversation.
-                        <br><br>
-                        • Built real-time voice pipeline using speech-to-text and text-to-speech  
-                        • Integrated LLM capabilities for dynamic and contextual responses  
-                        • Supports queries on teams, player stats, history, and game insights  
-                        • Designed for conversational accuracy and low-latency interaction
-                    </p>
-                    <a href="https://github.com/BK-Alister/NBA-AI-Assistant" target="_blank" class="project-link">View Project</a>
+                    <p>AI-powered voice assistant delivering real-time and historical NBA insights through natural conversation — built with speech-to-text, text-to-speech, and LLM integration for low-latency contextual responses.</p>
+                    <ul class="card-bullets">
+                        <li>Real-time voice pipeline with speech-to-text &amp; text-to-speech</li>
+                        <li>LLM-powered dynamic responses on teams, players, and game history</li>
+                    </ul>
+                    <a href="https://github.com/BK-Alister/NBA-AI-Assistant" target="_blank" class="card-link">View on GitHub ↗</a>
                 </div>
 
-                <div class="project-card">
+                <div class="project-card" data-index="03">
+                    <div class="card-header">
+                        <span class="card-num">03</span>
+                        <div class="card-tags"><span>Computer Vision</span><span>Robotics</span><span>OpenCV</span></div>
+                    </div>
                     <h3>Vision-Based Autonomous RC Car</h3>
-                    <p>
-                        Autonomous driving system using computer vision and real-time control on a TurboPi platform.
-                        <br><br>
-                        • Implemented lane detection and heading correction using OpenCV  
-                        • Built car-following system with distance estimation and safe stopping logic  
-                        • Added restart behavior for dynamic obstacle handling  
-                        • Validated performance through real-world testing and simulation environments
-                    </p>
-                    <a href="#" target="_blank" class="project-link">View Project</a>
+                    <p>Autonomous driving system using computer vision and real-time control on a TurboPi platform — lane detection, heading correction, and car-following with distance estimation and dynamic obstacle handling.</p>
+                    <ul class="card-bullets">
+                        <li>Lane detection &amp; heading correction with OpenCV</li>
+                        <li>Safe stopping logic validated in real-world environments</li>
+                    </ul>
+                    <a href="#" class="card-link">View Project ↗</a>
                 </div>
 
-                <div class="project-card">
+                <div class="project-card" data-index="04">
+                    <div class="card-header">
+                        <span class="card-num">04</span>
+                        <div class="card-tags"><span>ML</span><span>Streamlit</span><span>Finance</span></div>
+                    </div>
                     <h3>Stock Price Predictor</h3>
-                    <p>
-                        Machine learning web application for stock forecasting and technical analysis.
-                        <br><br>
-                        • Built with Streamlit for interactive data exploration  
-                        • Retrieved live financial data using Yahoo Finance API  
-                        • Implemented predictive modeling using machine learning techniques  
-                        • Visualized moving averages (100, 200, 250 days) and trend patterns
-                    </p>
-                    <a href="#" target="_blank" class="project-link">View Project</a>
+                    <p>Machine learning web application for stock forecasting and technical analysis — live data via Yahoo Finance API, predictive modeling, and moving average visualizations (100, 200, 250-day).</p>
+                    <ul class="card-bullets">
+                        <li>Interactive data exploration with Streamlit</li>
+                        <li>ML-based forecasting with trend pattern visualization</li>
+                    </ul>
+                    <a href="#" class="card-link">View Project ↗</a>
                 </div>
 
             </div>
         </div>
     </section>
 
+    <!-- ───────── RESUME ───────── -->
     <section id="resume">
-        <div class="container resume-container">
-            <h2 class="title">Resume</h2>
-            <div class="resume-preview">
-                <img src="resume.jpg" alt="Blake McAlister Resume" class="resume-img">
-                <a href="Blake McAlister Resume BW.pdf" download class="download-btn">Download PDF</a>
+        <div class="section-inner">
+            <div class="section-label">// 03 — Resume</div>
+            <h2 class="section-heading">Experience &amp;<br>Education</h2>
+            <div class="resume-wrap">
+                <div class="resume-preview">
+                    <img src="resume.jpg" alt="Blake McAlister Resume" class="resume-img">
+                </div>
+                <div class="resume-side">
+                    <p class="resume-desc">Computer Science student at Clemson University with hands-on experience across AI, systems programming, computer vision, and full-stack development.</p>
+                    <a href="Blake McAlister Resume BW.pdf" download class="btn-primary">Download PDF ↓</a>
+                    <div class="resume-meta">
+                        <div class="meta-row"><span>Degree</span><span>B.S. Computer Science</span></div>
+                        <div class="meta-row"><span>University</span><span>Clemson University</span></div>
+                        <div class="meta-row"><span>Focus</span><span>AI · ML · Systems</span></div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- ───────── CONTACT ───────── -->
     <section id="contact">
-        <div class="container">
-            <h2 class="title">Contact Me</h2>
-            <form class="contact-form" action="https://formspree.io/f/xzzzebeq" method="POST">
-                <div class="form-group">
-                    <input type="text" name="name" placeholder="Name" required>
+        <div class="section-inner">
+            <div class="section-label">// 04 — Contact</div>
+            <div class="contact-layout">
+                <div class="contact-left">
+                    <h2 class="section-heading">Let's build<br><em>something great.</em></h2>
+                    <p>Open to internships, research opportunities, and interesting projects. Reach out any time.</p>
+                    <div class="contact-links-list">
+                        <a href="mailto:blake.mcalister25@gmail.com">blake.mcalister25@gmail.com</a>
+                        <a href="tel:4047895463">(404) 789-5463</a>
+                        <a href="https://www.linkedin.com/in/blakemcalister25/" target="_blank">LinkedIn ↗</a>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <input type="email" name="email" placeholder="Email" required>
-                </div>
-                <div class="form-group">
-                    <textarea name="message" placeholder="Message" rows="5" required></textarea>
-                </div>
-                <button type="submit">Send Message</button>
-            </form>
+                <form class="contact-form" action="https://formspree.io/f/xzzzebeq" method="POST">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" name="name" placeholder="Your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" name="email" placeholder="your@email.com" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea name="message" placeholder="What's on your mind?" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary btn-full">Send Message →</button>
+                </form>
+            </div>
         </div>
     </section>
 
     <footer>
-        <div class="container">
-            <p class="copyright">© 2026 Blake McAlister. All rights reserved.</p>
+        <div class="footer-inner">
+            <span class="nav-logo">BM<span class="blink">_</span></span>
+            <p>© 2026 Blake McAlister. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/blakemcalister25/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/BK-Alister" target="_blank">GitHub</a>
+                <a href="mailto:blake.mcalister25@gmail.com">Email</a>
+            </div>
         </div>
     </footer>
 
-    <script src="https://kit.fontawesome.com/your-kit-code.js"></script>
     <script src="script.js"></script>
-
 </body>
 </html>
