@@ -25,6 +25,7 @@ body {
     font-family: var(--sans);
     line-height: 1.6;
     overflow-x: hidden;
+    max-width: 100vw;
 }
 
 /* ─── Noise + Scanline ───────────────────────── */
@@ -319,12 +320,11 @@ section {
 
 @media (max-width: 600px) {
     .hero-name {
-        font-size: 12vw;
-        line-height: 1.1;
-        white-space: normal;
+        font-size: 8vw;
+        line-height: 1.2;
     }
     .accent-stroke {
-        -webkit-text-stroke-width: 1.5px;
+        -webkit-text-stroke-width: 1px;
     }
 }
 
