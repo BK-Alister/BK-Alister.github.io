@@ -10,9 +10,7 @@
 </head>
 <body>
 
-    <!-- Noise overlay -->
     <div class="noise"></div>
-    <!-- Scan line -->
     <div class="scanline"></div>
 
     <nav id="nav">
@@ -31,7 +29,6 @@
         </div>
     </nav>
 
-    <!-- Mobile drawer -->
     <div class="mobile-menu" id="mobile-menu">
         <a href="#home" class="mob-link">Home</a>
         <a href="#about" class="mob-link">About</a>
@@ -40,14 +37,13 @@
         <a href="#contact" class="mob-link">Contact</a>
     </div>
 
-    <!-- ───────── HERO ───────── -->
+    <!-- HERO -->
     <section id="home">
         <div class="hero-grid">
             <div class="hero-left">
                 <p class="hero-tag">[ Computer Science · Clemson University ]</p>
                 <h1 class="hero-name">
-                    <span class="glitch" data-text="Blake">Blake</span>
-                    <span class="glitch accent-stroke" data-text="McAlister">McAlister</span>
+                    Blake<br>McAlister
                 </h1>
                 <p class="hero-sub">Software Engineer &amp; AI Researcher<br>Building intelligent, scalable systems.</p>
                 <div class="hero-cta">
@@ -55,7 +51,7 @@
                     <a href="#contact" class="btn-ghost">Get in Touch →</a>
                 </div>
                 <div class="hero-contacts">
-                    <a href="/cdn-cgi/l/email-protection#1f7d737e747a31727c7e73766c6b7a6d2d2a5f78727e7673317c7072"><span class="__cf_email__" data-cfemail="d6b4bab7bdb3f8bbb5b7babfa5a2b3a4e4e396b1bbb7bfbaf8b5b9bb">[email&#160;protected]</span></a>
+                    <a href="mailto:blake.mcalister25@gmail.com">blake.mcalister25@gmail.com</a>
                     <a href="tel:4047895463">(404) 789-5463</a>
                     <a href="https://www.linkedin.com/in/blakemcalister25/" target="_blank">LinkedIn ↗</a>
                     <a href="https://github.com/BK-Alister" target="_blank">GitHub ↗</a>
@@ -78,22 +74,15 @@
         <div class="scroll-hint">scroll ↓</div>
     </section>
 
-    <!-- ───────── ABOUT ───────── -->
+    <!-- ABOUT -->
     <section id="about">
         <div class="section-inner">
             <div class="section-label">// 01 — About</div>
             <div class="about-layout">
                 <h2 class="section-heading">Turning ideas<br><em>into systems.</em></h2>
                 <div class="about-body">
-                    <p>
-                        I'm a Computer Science student at Clemson University focused on building intelligent systems and scalable software.
-                        My work sits at the intersection of machine learning, AI-driven applications, and real-time systems.
-                    </p>
-                    <p>
-                        I enjoy taking ideas from concept to execution — especially projects that combine data, automation, and user interaction
-                        to solve real-world problems. Whether it's an autonomous vehicle, a voice-powered NBA assistant, or an environmental
-                        monitoring platform, I'm energized by the full stack of challenges.
-                    </p>
+                    <p>I'm a Computer Science student at Clemson University focused on building intelligent systems and scalable software. My work sits at the intersection of machine learning, AI-driven applications, and real-time systems.</p>
+                    <p>I enjoy taking ideas from concept to execution — especially projects that combine data, automation, and user interaction to solve real-world problems.</p>
                     <div class="skills-row">
                         <div class="skill-col">
                             <span class="skill-label">Languages</span>
@@ -113,21 +102,19 @@
         </div>
     </section>
 
-    <!-- ───────── PROJECTS ───────── -->
+    <!-- PROJECTS -->
     <section id="projects">
         <div class="section-inner">
             <div class="section-label">// 02 — Projects</div>
             <h2 class="section-heading">Selected Work</h2>
-
             <div class="projects-grid">
-
-                <div class="project-card featured" data-index="01">
+                <div class="project-card featured">
                     <div class="card-header">
                         <span class="card-num">01</span>
                         <div class="card-tags"><span>NASA Hackathon</span><span>APIs</span><span>Real-Time</span></div>
                     </div>
-                    <h3>Urba: Environmental<br>Intelligence Platform</h3>
-                    <p>Real-time environmental monitoring platform that aggregates global disaster and environmental data. Built at the NASA Space Apps Hackathon, integrating NASA EONET and public APIs to track fires, air quality, and extreme weather.</p>
+                    <h3>Urba: Environmental Intelligence Platform</h3>
+                    <p>Real-time environmental monitoring platform built at the NASA Space Apps Hackathon, integrating NASA EONET and public APIs to track fires, air quality, and extreme weather.</p>
                     <ul class="card-bullets">
                         <li>City-level Wellness Score from aggregated environmental &amp; community data</li>
                         <li>Social feed for user-generated location-based environmental reporting</li>
@@ -135,58 +122,54 @@
                     </ul>
                     <a href="#" class="card-link">View Project ↗</a>
                 </div>
-
-                <div class="project-card" data-index="02">
+                <div class="project-card">
                     <div class="card-header">
                         <span class="card-num">02</span>
                         <div class="card-tags"><span>AI</span><span>NLP</span><span>Voice</span></div>
                     </div>
                     <h3>NBA AI Voice Assistant</h3>
-                    <p>AI-powered voice assistant delivering real-time and historical NBA insights through natural conversation — built with speech-to-text, text-to-speech, and LLM integration for low-latency contextual responses.</p>
+                    <p>AI-powered voice assistant delivering real-time and historical NBA insights through natural conversation with LLM integration for low-latency contextual responses.</p>
                     <ul class="card-bullets">
                         <li>Real-time voice pipeline with speech-to-text &amp; text-to-speech</li>
                         <li>LLM-powered dynamic responses on teams, players, and game history</li>
                     </ul>
                     <a href="https://github.com/BK-Alister/NBA-AI-Assistant" target="_blank" class="card-link">View on GitHub ↗</a>
                 </div>
-
-                <div class="project-card" data-index="03">
+                <div class="project-card">
                     <div class="card-header">
                         <span class="card-num">03</span>
                         <div class="card-tags"><span>Computer Vision</span><span>Robotics</span><span>OpenCV</span></div>
                     </div>
                     <h3>Vision-Based Autonomous RC Car</h3>
-                    <p>Autonomous driving system using computer vision and real-time control on a TurboPi platform — lane detection, heading correction, and car-following with distance estimation and dynamic obstacle handling.</p>
+                    <p>Autonomous driving system using computer vision and real-time control on a TurboPi platform with lane detection and dynamic obstacle handling.</p>
                     <ul class="card-bullets">
                         <li>Lane detection &amp; heading correction with OpenCV</li>
                         <li>Safe stopping logic validated in real-world environments</li>
                     </ul>
                     <a href="#" class="card-link">View Project ↗</a>
                 </div>
-
-                <div class="project-card" data-index="04">
+                <div class="project-card">
                     <div class="card-header">
                         <span class="card-num">04</span>
                         <div class="card-tags"><span>ML</span><span>Streamlit</span><span>Finance</span></div>
                     </div>
                     <h3>Stock Price Predictor</h3>
-                    <p>Machine learning web application for stock forecasting and technical analysis — live data via Yahoo Finance API, predictive modeling, and moving average visualizations (100, 200, 250-day).</p>
+                    <p>Machine learning web app for stock forecasting and technical analysis with live data via Yahoo Finance API and moving average visualizations.</p>
                     <ul class="card-bullets">
                         <li>Interactive data exploration with Streamlit</li>
                         <li>ML-based forecasting with trend pattern visualization</li>
                     </ul>
                     <a href="#" class="card-link">View Project ↗</a>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <!-- ───────── RESUME ───────── -->
+    <!-- RESUME -->
     <section id="resume">
         <div class="section-inner">
             <div class="section-label">// 03 — Resume</div>
-            <h2 class="section-heading">Experience &amp;<br>Education</h2>
+            <h2 class="section-heading">Experience &amp; Education</h2>
             <div class="resume-wrap">
                 <div class="resume-preview">
                     <img src="resume.jpg" alt="Blake McAlister Resume" class="resume-img">
@@ -204,7 +187,7 @@
         </div>
     </section>
 
-    <!-- ───────── CONTACT ───────── -->
+    <!-- CONTACT -->
     <section id="contact">
         <div class="section-inner">
             <div class="section-label">// 04 — Contact</div>
@@ -213,7 +196,7 @@
                     <h2 class="section-heading">Let's build<br><em>something great.</em></h2>
                     <p>Open to internships, research opportunities, and interesting projects. Reach out any time.</p>
                     <div class="contact-links-list">
-                        <a href="/cdn-cgi/l/email-protection#046668656f612a696765686d777061763631446369656d682a676b69"><span class="__cf_email__" data-cfemail="20424c414b450e4d43414c4953544552121560474d41494c0e434f4d">[email&#160;protected]</span></a>
+                        <a href="mailto:blake.mcalister25@gmail.com">blake.mcalister25@gmail.com</a>
                         <a href="tel:4047895463">(404) 789-5463</a>
                         <a href="https://www.linkedin.com/in/blakemcalister25/" target="_blank">LinkedIn ↗</a>
                     </div>
@@ -244,4 +227,13 @@
             <span class="nav-logo">BM<span class="blink">_</span></span>
             <p>© 2026 Blake McAlister. All rights reserved.</p>
             <div class="footer-links">
-                <a href="https://www.linkedin.com/in/blakemcalister25/"
+                <a href="https://www.linkedin.com/in/blakemcalister25/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/BK-Alister" target="_blank">GitHub</a>
+                <a href="mailto:blake.mcalister25@gmail.com">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
