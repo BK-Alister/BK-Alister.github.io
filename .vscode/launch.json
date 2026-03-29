@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/blakemcalister/Desktop/2150 group/Untitled/cpsc2150-checkers-runtime-errors/cpsc2150/extendedCheckers/ReviewFork/BK-Alister.github.io",
+      "program": "/Users/blakemcalister/Desktop/2150 group/Untitled/cpsc2150-checkers-runtime-errors/cpsc2150/extendedCheckers/ReviewFork/BK-Alister.github.io/build/Debug/outDebug"
+    }
+  ]
+}
