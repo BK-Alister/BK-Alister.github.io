@@ -325,11 +325,16 @@ section {
 
 @media (max-width: 600px) {
     .hero-name {
-        font-size: clamp(1.6rem, 7.5vw, 2.4rem);
+        font-size: 11vw;
         line-height: 1.15;
     }
     .accent-stroke {
         -webkit-text-stroke-width: 1.5px;
+    }
+    /* Disable glitch pseudo-elements on mobile — they overflow the viewport */
+    .glitch::before,
+    .glitch::after {
+        display: none;
     }
 }
 
