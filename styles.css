@@ -245,6 +245,11 @@ section {
     overflow: hidden;
 }
 
+.hero-left {
+    overflow: hidden;
+    min-width: 0;
+}
+
 /* Subtle grid background */
 #home::before {
     content: '';
@@ -268,12 +273,12 @@ section {
 
 @media (max-width: 600px) {
     .hero-grid {
-        padding: 6rem 1.25rem 3rem;
+        padding: 6rem 1rem 3rem;
         gap: 2rem;
     }
     .hero-tag {
         font-size: 0.62rem;
-        letter-spacing: 0.08em;
+        letter-spacing: 0.06em;
     }
     .hero-sub {
         font-size: 0.95rem;
@@ -310,10 +315,10 @@ section {
 }
 .accent-stroke:hover { -webkit-text-stroke-color: var(--accent); }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
     .hero-name {
-        font-size: clamp(2rem, 12vw, 3.2rem);
-        line-height: 1.05;
+        font-size: 10.5vw;
+        line-height: 1.08;
     }
     .accent-stroke {
         -webkit-text-stroke-width: 1.5px;
