@@ -266,6 +266,28 @@ section {
     position: relative; z-index: 1;
 }
 
+@media (max-width: 600px) {
+    .hero-grid {
+        padding: 6rem 1.25rem 3rem;
+        gap: 2rem;
+    }
+    .hero-tag {
+        font-size: 0.62rem;
+        letter-spacing: 0.08em;
+    }
+    .hero-sub {
+        font-size: 0.95rem;
+    }
+    .hero-cta {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+    .btn-primary, .btn-ghost {
+        text-align: center;
+        width: 100%;
+    }
+}
+
 .hero-tag {
     font-family: var(--mono);
     font-size: 0.72rem;
@@ -276,7 +298,7 @@ section {
 }
 
 .hero-name {
-    font-size: clamp(3.5rem, 8vw, 7rem);
+    font-size: clamp(2.4rem, 10vw, 7rem);
     font-weight: 800;
     line-height: 0.95;
     margin-bottom: 1.5rem;
@@ -287,6 +309,16 @@ section {
     transition: -webkit-text-stroke-color 0.3s;
 }
 .accent-stroke:hover { -webkit-text-stroke-color: var(--accent); }
+
+@media (max-width: 480px) {
+    .hero-name {
+        font-size: clamp(2rem, 12vw, 3.2rem);
+        line-height: 1.05;
+    }
+    .accent-stroke {
+        -webkit-text-stroke-width: 1.5px;
+    }
+}
 
 .hero-sub {
     font-size: 1.05rem;
