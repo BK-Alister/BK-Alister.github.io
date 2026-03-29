@@ -299,17 +299,34 @@ section {
 .hero-cta { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 3rem; }
 
 .hero-contacts {
-    display: flex; flex-direction: column; gap: 0.5rem;
+    display: flex; flex-direction: column; gap: 0.75rem;
 }
 .hero-contacts a {
     font-family: var(--mono);
-    font-size: 0.78rem;
-    color: var(--muted);
+    font-size: 0.9rem;
+    color: rgba(240,240,240,0.75);
     text-decoration: none;
     letter-spacing: 0.04em;
     transition: color 0.2s;
+    display: flex; align-items: center; gap: 0.5rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--border);
+}
+.hero-contacts a:last-child { border-bottom: none; }
+.hero-contacts a::before {
+    content: '→';
+    color: var(--accent);
+    font-size: 0.75rem;
+    flex-shrink: 0;
 }
 .hero-contacts a:hover { color: var(--accent); }
+
+@media (max-width: 600px) {
+    .hero-contacts a {
+        font-size: 1rem;
+        padding: 0.75rem 0;
+    }
+}
 
 /* Image frame */
 .img-frame {
