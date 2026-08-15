@@ -170,6 +170,20 @@ section { min-height: 100vh; padding: 8rem 2rem 4rem; position: relative; }
     transition: border-color 0.2s, color 0.2s;
 }
 .btn-ghost:hover { border-color: var(--accent); color: var(--accent); }
+.btn-outline {
+    display: inline-block;
+    background: transparent;
+    color: var(--light);
+    font-family: var(--mono);
+    font-size: 0.82rem;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+    padding: 0.85rem 2rem;
+    border-radius: var(--radius);
+    border: 1px solid rgba(255,255,255,0.35);
+    transition: border-color 0.2s, color 0.2s;
+}
+.btn-outline:hover { border-color: var(--accent); color: var(--accent); }
 .btn-full { width: 100%; text-align: center; }
 
 /* ─── HERO ───────────────────────────────────── */
@@ -504,7 +518,7 @@ footer p { font-family: var(--mono); font-size: 0.7rem; color: var(--muted); }
     .hero-sub { font-size: 0.95rem; }
 
     .hero-cta { flex-direction: column; gap: 0.75rem; }
-    .btn-primary, .btn-ghost { text-align: center; width: 100%; }
+    .btn-primary, .btn-ghost, .btn-outline { text-align: center; width: 100%; }
 
     .section-heading { font-size: clamp(1.4rem, 5vw, 2rem); }
     .skills-row { grid-template-columns: 1fr; }
