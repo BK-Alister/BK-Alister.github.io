@@ -1,4 +1,4 @@
-// Smooth scroll
+//smooth scroll
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         const target = document.querySelector(this.getAttribute('href'));
@@ -9,7 +9,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Mobile menu
+//mobile menu
 const hamburger = document.getElementById('hamburger');
 const mobileMenu = document.getElementById('mobile-menu');
 hamburger.addEventListener('click', () => {
@@ -17,7 +17,7 @@ hamburger.addEventListener('click', () => {
     hamburger.setAttribute('aria-expanded', isOpen);
 });
 
-// Scroll reveal
+//scroll reveal
 const revealEls = document.querySelectorAll('.project-card, .about-body, .resume-wrap, .contact-form, .contact-left, .pill, .skill-col');
 revealEls.forEach(el => el.classList.add('reveal'));
 const observer = new IntersectionObserver((entries) => {
@@ -31,13 +31,13 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.12 });
 revealEls.forEach(el => observer.observe(el));
 
-// Nav background on scroll
+//nav background on scroll
 const nav = document.getElementById('nav');
 window.addEventListener('scroll', () => {
     nav.style.background = window.scrollY > 40 ? 'rgba(10,10,10,0.97)' : 'rgba(10,10,10,0.85)';
 }, { passive: true });
 
-// Active nav highlight
+//active nav highlight
 const sections = document.querySelectorAll('section[id]');
 const navLinks = document.querySelectorAll('.nav-links a');
 const sectionObserver = new IntersectionObserver((entries) => {
