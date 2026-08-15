@@ -304,7 +304,7 @@ section { min-height: 100vh; padding: 8rem 2rem 4rem; position: relative; }
     margin-bottom: 1.2rem;
 }
 .skills-row {
-    display: grid; grid-template-columns: repeat(3, 1fr);
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     gap: 1.5rem; margin-top: 2rem;
     padding-top: 2rem;
     border-top: 1px solid var(--border);
@@ -374,6 +374,16 @@ section { min-height: 100vh; padding: 8rem 2rem 4rem; position: relative; }
     transition: opacity 0.2s;
 }
 .card-link:hover { opacity: 0.7; }
+
+/* ─── EXPERIENCE LIST ────────────────────────── */
+.exp-list {
+    display: flex; flex-direction: column;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    margin-bottom: 4rem;
+}
+.exp-list .project-card:nth-child(odd) { border-right: none; }
 
 /* ─── RESUME ─────────────────────────────────── */
 #resume { background: var(--bg2); }
