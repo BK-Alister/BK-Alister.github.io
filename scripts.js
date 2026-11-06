@@ -39,11 +39,7 @@ function renderProjects(fromInteraction) {
 
     projectCards.forEach(card => {
         card.hidden = !shown.includes(card);
-        card.classList.remove('span-full');
     });
-    // Stretch a lone trailing card so the two-column grid never leaves a gap.
-    const regular = shown.filter(card => !card.classList.contains('featured'));
-    if (regular.length % 2) regular[regular.length - 1].classList.add('span-full');
     if (fromInteraction) shown.forEach(card => card.classList.add('visible'));
 
     projectStatus.textContent = `Showing ${shown.length} of ${projectCards.length} projects`;
