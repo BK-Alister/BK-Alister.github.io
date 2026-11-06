@@ -3,17 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blake McAlister the Software Engineer</title>
+    <title>Blake McAlister | Software Engineer &amp; AI Developer</title>
+    <meta name="description" content="Portfolio of Blake McAlister, Clemson University Computer Science student specializing in software engineering, AI, machine learning, and intelligent technical solutions.">
+    <meta name="theme-color" content="#0a0a0a">
+    <link rel="canonical" href="https://bk-alister.github.io/">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bk-alister.github.io/">
+    <meta property="og:title" content="Blake McAlister | Software Engineer &amp; AI Developer">
+    <meta property="og:description" content="Portfolio of Blake McAlister, Clemson University Computer Science student specializing in software engineering, AI, machine learning, and intelligent technical solutions.">
+    <meta property="og:image" content="https://bk-alister.github.io/BlakeSmiles.png">
+    <meta property="og:image:alt" content="Portrait of Blake McAlister">
+    <meta name="twitter:card" content="summary">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230a0a0a'/%3E%3Ctext x='16' y='22' font-family='monospace' font-size='16' font-weight='700' text-anchor='middle' fill='%23c8f135'%3EBM%3C/text%3E%3C/svg%3E">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+    <a href="#main" class="skip-link">Skip to content</a>
+
     <div class="noise"></div>
     <div class="scanline"></div>
 
-    <nav id="nav">
+    <nav id="nav" aria-label="Primary">
         <div class="nav-inner">
             <span class="nav-logo">BM<span class="blink">_</span></span>
             <div class="nav-links">
@@ -23,7 +36,7 @@
                 <a href="#resume">Resume</a>
                 <a href="#contact">Contact</a>
             </div>
-            <button class="hamburger" id="hamburger" aria-label="Menu">
+            <button type="button" class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu">
                 <span></span><span></span><span></span>
             </button>
         </div>
@@ -37,6 +50,8 @@
         <a href="#contact" class="mob-link">Contact</a>
     </div>
 
+    <main id="main" tabindex="-1">
+
     <!-- HERO -->
     <section id="home">
         <div class="hero-grid">
@@ -45,30 +60,35 @@
                 <h1 class="hero-name">
                     Blake<br>McAlister
                 </h1>
-                <p class="hero-sub">Software Engineer &amp; AI Researcher<br>Building intelligent, scalable systems.</p>
+                <p class="hero-role">Software Engineer | AI &amp; Intelligent Systems</p>
+                <p class="hero-sub">Building intelligent software solutions that connect technology, people, and real-world business problems.</p>
+                <p class="hero-status">Open to Full-Time Opportunities | December 2026 Graduate</p>
                 <div class="hero-cta">
                     <a href="#projects" class="btn-primary">View Work</a>
                     <a href="#contact" class="btn-ghost">Get in Touch →</a>
-                    <a href="Blake McAlister Resume Comp.pdf" download="Blake McAlister Resume Comp.pdf" class="btn-outline">Save my Resume ↓</a>
+                    <a href="Blake%20McAlister%20Resume%20Comp.pdf" download="Blake McAlister Resume Comp.pdf" class="btn-outline">Save my Resume ↓</a>
                 </div>
                 <div class="hero-contacts">
                     <a href="mailto:blake.mcalister25@gmail.com">blake.mcalister25@gmail.com</a>
-                    <a href="tel:4047895463">(404) 789-5463</a>
-                    <a href="https://www.linkedin.com/in/blakemcalister25/" target="_blank">LinkedIn ↗</a>
-                    <a href="https://github.com/BK-Alister" target="_blank">GitHub ↗</a>
+                    <a href="tel:+14047895463">(404) 789-5463</a>
+                    <a href="https://www.linkedin.com/in/bmcalister25/" target="_blank" rel="noopener">LinkedIn ↗</a>
+                    <a href="https://github.com/BK-Alister" target="_blank" rel="noopener">GitHub ↗</a>
                 </div>
             </div>
             <div class="hero-right">
                 <div class="img-frame">
-                    <img src="BlakeSmiles.png" alt="Blake McAlister" class="profile-img">
+                    <img src="BlakeSmiles.png" alt="Portrait of Blake McAlister" class="profile-img">
                     <div class="img-border"></div>
                     <div class="img-tag">[ BLAKE MCALISTER / CS&nbsp;'26 ]</div>
                 </div>
-                <div class="stat-pills">
-                    <div class="pill">AI &amp; ML</div>
-                    <div class="pill">Systems</div>
-                    <div class="pill">Computer Vision</div>
-                    <div class="pill">Full-Stack</div>
+                <div class="interests">
+                    <h2 class="interests-label">Areas of Interest</h2>
+                    <ul class="stat-pills">
+                        <li class="pill">Solutions Engineering</li>
+                        <li class="pill">AI Engineering</li>
+                        <li class="pill">Machine Learning Engineering</li>
+                        <li class="pill">Software Engineering</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -82,28 +102,29 @@
             <div class="about-layout">
                 <h2 class="section-heading">Turning ideas<br><em>into systems.</em></h2>
                 <div class="about-body">
-                    <p>I'm a Computer Science student at Clemson University focused on building intelligent systems and scalable software. My work sits at the intersection of machine learning, AI-driven applications, and real-time systems.</p>
-                    <p>I enjoy taking ideas from concept to execution, especially projects that combine data, automation, and user interaction to solve real-world problems.</p>
+                    <p>I'm a Computer Science student at Clemson University with a minor in Artificial Intelligence, graduating in December 2026. My experience spans software engineering, machine learning, and AI-powered application development, through internships at Trimble and Oldcastle APG and an industry-sponsored capstone with Capgemini.</p>
+                    <p>I like building complete solutions: user-facing React and TypeScript applications, backend integrations on Azure, and the Python pipelines behind machine learning systems. Those projects have taught me to care as much about the people using a product as the engineering behind it.</p>
+                    <p>I enjoy hands-on development, and I also enjoy the work around it: understanding the problem, building relationships with users and stakeholders, and presenting technical ideas clearly. I'm looking for roles that combine both and deliver real business value.</p>
                     <div class="skills-row">
                         <div class="skill-col">
-                            <span class="skill-label">Programming</span>
-                            <span>Python · Java · JavaScript · C/C++ · SQL · HTML</span>
+                            <span class="skill-label">Programming Languages</span>
+                            <span>Python · Java · JavaScript · TypeScript · C/C++ · SQL · HTML</span>
                         </div>
                         <div class="skill-col">
-                            <span class="skill-label">ML &amp; AI</span>
-                            <span>PyTorch · TensorFlow · Scikit-learn · YOLO · OpenCV · OCR · NLP · Vision-Language Models</span>
+                            <span class="skill-label">AI &amp; Machine Learning</span>
+                            <span>PyTorch · TensorFlow · Scikit-learn · OpenCV · YOLO · OCR · Computer Vision · NLP · Vision-Language Models · AI Agents</span>
                         </div>
                         <div class="skill-col">
-                            <span class="skill-label">Data Science</span>
-                            <span>NumPy · Pandas · Data Cleaning · EDA · Statistical Analysis · Data Visualization</span>
+                            <span class="skill-label">Frontend &amp; Backend</span>
+                            <span>React · Node.js · Express.js · Electron · REST APIs · Flask · FastAPI · Streamlit</span>
                         </div>
                         <div class="skill-col">
-                            <span class="skill-label">Full-Stack</span>
-                            <span>AWS · Flask · FastAPI · React · REST APIs · Docker · Node.js · API Integration</span>
+                            <span class="skill-label">Cloud &amp; Developer Tools</span>
+                            <span>Microsoft Azure · Azure Functions · Azure SQL · AWS · Git/GitHub · Docker · Linux/Unix · CI/CD · HPC (Palmetto Cluster) · Unit &amp; Integration Testing</span>
                         </div>
                         <div class="skill-col">
-                            <span class="skill-label">Systems</span>
-                            <span>Git/GitHub · Linux/Unix · Unit &amp; Integration Testing · HPC · Palmetto Cluster</span>
+                            <span class="skill-label">Data &amp; Analytics</span>
+                            <span>Pandas · NumPy · Data Cleaning · Exploratory Data Analysis · Data Visualization · Predictive Modeling</span>
                         </div>
                     </div>
                 </div>
@@ -116,60 +137,184 @@
         <div class="section-inner">
             <div class="section-label">2: Projects</div>
             <h2 class="section-heading">Selected Work</h2>
-            <div class="projects-grid">
-                <div class="project-card featured">
+
+            <!-- Revealed by scripts.js; without JS every project simply stays visible. -->
+            <div class="project-toolbar" id="project-toolbar" hidden>
+                <div class="project-filters" role="group" aria-label="Filter projects by category">
+                    <button type="button" class="filter-btn" data-filter="all" aria-pressed="true">All Projects</button>
+                    <button type="button" class="filter-btn" data-filter="ai" aria-pressed="false">AI &amp; Machine Learning</button>
+                    <button type="button" class="filter-btn" data-filter="fullstack" aria-pressed="false">Full-Stack &amp; Cloud</button>
+                    <button type="button" class="filter-btn" data-filter="vision" aria-pressed="false">Computer Vision &amp; Robotics</button>
+                </div>
+                <p class="project-status" id="project-status" aria-live="polite"></p>
+            </div>
+
+            <div class="projects-grid" id="projects-grid">
+
+                <article class="project-card featured" data-category="ai fullstack">
                     <div class="card-header">
                         <span class="card-num">1</span>
-                        <div class="card-tags"><span>NASA Hackathon</span><span>APIs</span><span>Real-Time</span></div>
+                        <span class="card-category">AI Engineering · Full-Stack · Cloud · Solutions</span>
                     </div>
-                    <h3>Urba: Environmental Intelligence Platform</h3>
-                    <p>Real-time environmental monitoring platform built at the NASA Space Apps Hackathon, integrating NASA EONET and public APIs to track fires, air quality, and extreme weather.</p>
+                    <h3>Capgemini ShopBot Commerce</h3>
+                    <p>Industry-sponsored capstone: an AI-powered retail platform that brings customer analytics, purchasing behavior, and recommendations into one application. I independently built the dashboard and the secure backend layer that connects it to Azure-hosted services.</p>
+                    <dl class="card-stats">
+                        <div><dt>Unique shoppers in project dataset</dt><dd>96,096</dd></div>
+                        <div><dt>Orders in project dataset</dt><dd>99,441</dd></div>
+                    </dl>
                     <ul class="card-bullets">
-                        <li>City-level Wellness Score from aggregated environmental &amp; community data</li>
-                        <li>Social feed for user-generated location-based environmental reporting</li>
-                        <li>Designed for mobile-first rapid situational awareness</li>
+                        <li>Built the React/TypeScript dashboard, including Customer 360, purchase, review, and customer directory views</li>
+                        <li>Created an Express.js backend-for-frontend connecting the UI to Azure Functions and Azure SQL over REST APIs</li>
+                        <li>Contributed to the recommendation agent and took ownership of analytics-agent development</li>
+                        <li>Delivered a working MVP to Capgemini stakeholders and fed their feedback into ongoing development</li>
                     </ul>
-                    <a href="#" class="card-link">View Project ↗</a>
-                </div>
-                <div class="project-card">
+                    <div class="card-tags card-tech"><span>React</span><span>TypeScript</span><span>Node.js</span><span>Express.js</span><span>Python</span><span>Azure Functions</span><span>Azure SQL</span><span>REST APIs</span><span>AI Agents</span></div>
+                    <span class="card-note">Private sponsor repository · MVP in active development</span>
+                </article>
+
+                <article class="project-card featured" data-category="fullstack">
                     <div class="card-header">
                         <span class="card-num">2</span>
-                        <div class="card-tags"><span>AI</span><span>NLP</span><span>Voice</span></div>
+                        <span class="card-category">Solutions Engineering · Full-Stack · Data Visualization</span>
                     </div>
-                    <h3>NBA AI Voice Assistant</h3>
-                    <p>AI-powered voice assistant delivering real-time and historical NBA insights through natural conversation with LLM integration for low-latency contextual responses.</p>
+                    <h3>TigerFlow: Game Day Crowd Intelligence</h3>
+                    <p>Built for the Deloitte × Clemson Innovation Challenge 2026. Game days make it hard to know where crowds are and where to park, so TigerFlow turns crowd activity into a map people can use to plan navigation and parking.</p>
                     <ul class="card-bullets">
-                        <li>Real-time voice pipeline with speech-to-text &amp; text-to-speech</li>
-                        <li>LLM-powered dynamic responses on teams, players, and game history</li>
+                        <li>Interactive crowd-density heatmaps in Leaflet.js, with a time slider for exploring activity across game day</li>
+                        <li>PawPark parking visualization inside the same geographic interface</li>
+                        <li>Five-slide, McKinsey-style pitch deck laying out the problem, the solution, and its proposed value</li>
                     </ul>
-                    <a href="https://github.com/BK-Alister/NBA-AI-Assistant" target="_blank" class="card-link">View on GitHub ↗</a>
-                </div>
-                <div class="project-card">
+                    <div class="card-tags card-tech"><span>JavaScript</span><span>Leaflet.js</span><span>Geospatial Visualization</span><span>Pitch Deck</span></div>
+                </article>
+
+                <article class="project-card featured" data-category="ai">
                     <div class="card-header">
                         <span class="card-num">3</span>
-                        <div class="card-tags"><span>Computer Vision</span><span>Robotics</span><span>OpenCV</span></div>
+                        <span class="card-category">Machine Learning · Bioinformatics · Predictive Analytics</span>
                     </div>
-                    <h3>Vision-Based Autonomous RC Car</h3>
-                    <p>Autonomous driving system using computer vision and real-time control on a TurboPi platform with lane detection and dynamic obstacle handling.</p>
+                    <h3>Tumor Surface Target Prioritization</h3>
+                    <p>Independently developed computational biology project. It predicts how strongly lung adenocarcinoma (LUAD) cell lines depend on each gene using public expression and copy-number data, then ranks held-out cell-surface genes for further research.</p>
+                    <ol class="card-flow" aria-label="Research workflow">
+                        <li>DepMap, TCGA, GISTIC &amp; HPA data</li>
+                        <li>Gene table, 14 features</li>
+                        <li>Frozen 70/15/15 split</li>
+                        <li>Baselines vs. boosted models</li>
+                        <li>Ranked surface genes</li>
+                    </ol>
+                    <dl class="card-stats">
+                        <div><dt>Genes labeled</dt><dd>17,930</dd></div>
+                        <div><dt>LUAD cell lines</dt><dd>53</dd></div>
+                        <div><dt>Surface-gene Spearman ρ</dt><dd>0.50</dd></div>
+                    </dl>
                     <ul class="card-bullets">
-                        <li>Lane detection &amp; heading correction with OpenCV</li>
-                        <li>Safe stopping logic validated in real-world environments</li>
+                        <li>Built a reproducible Python pipeline with download logging, a seeded split, and a test set scored only once</li>
+                        <li>Kept CRISPR dependency data out of the features; the dataset build fails if a derived column appears</li>
+                        <li>L1-loss gradient boosting with 3× surface-gene weighting reached ρ = 0.50 (95% CI 0.41–0.57) on 321 held-out surface genes and cut overall MAE to 0.159 from a 0.184 baseline; a stricter cytoband-grouped split gave ρ ≈ 0.42</li>
                     </ul>
-                    <a href="#" class="card-link">View Project ↗</a>
-                </div>
-                <div class="project-card">
+                    <p class="card-caveat">Rankings are computational evidence for prioritizing research. They are not experimentally validated targets or clinical findings.</p>
+                    <div class="card-tags card-tech"><span>Python</span><span>Scikit-learn</span><span>Pandas</span><span>SciPy</span><span>Gradient Boosting</span><span>DepMap</span><span>TCGA</span></div>
+                    <a href="https://github.com/BK-Alister/Tumor-Surface-Target-Prioritization" target="_blank" rel="noopener" class="card-link" aria-label="View Tumor Surface Target Prioritization on GitHub">View on GitHub ↗</a>
+                </article>
+
+                <article class="project-card" data-category="ai vision">
                     <div class="card-header">
                         <span class="card-num">4</span>
-                        <div class="card-tags"><span>ML</span><span>Streamlit</span><span>Finance</span></div>
+                        <span class="card-category">Machine Learning · Computer Vision · Research</span>
+                    </div>
+                    <h3>Audiogram Deep Learning Research</h3>
+                    <p>Handwritten clinical audiograms are slow to enter by hand. This Watt AI research project converts those images into machine-readable records using computer vision and vision-language models.</p>
+                    <ul class="card-bullets">
+                        <li>Built a YOLO/OpenCV pipeline with image preprocessing and calibration</li>
+                        <li>Developed Python extraction workflows and compared OCR with Vision-LLM approaches</li>
+                        <li>Reached 83.1% field-level accuracy extracting speech scores with Qwen Vision LLM, in research involving about 400 audiograms</li>
+                    </ul>
+                    <div class="card-tags card-tech"><span>Python</span><span>YOLO</span><span>OpenCV</span><span>OCR</span><span>Vision LLM</span></div>
+                </article>
+
+                <article class="project-card" data-category="fullstack">
+                    <div class="card-header">
+                        <span class="card-num">5</span>
+                        <span class="card-category">Full-Stack · API Integration · Hackathon</span>
+                    </div>
+                    <h3>Urba: Environmental Intelligence Platform</h3>
+                    <p>Environmental social platform built at the NASA Space Apps Hackathon. It turns public datasets on wildfires, air quality, and extreme weather into local information people can act on and discuss.</p>
+                    <ul class="card-bullets">
+                        <li>Integrated NASA EONET and other public APIs for live environmental data</li>
+                        <li>Built an interactive social feed for sharing updates and community reports</li>
+                        <li>Implemented a city-level Wellness Score combining environmental data with user reports</li>
+                    </ul>
+                    <div class="card-tags card-tech"><span>NASA EONET</span><span>Public APIs</span><span>Full-Stack</span></div>
+                </article>
+
+                <article class="project-card" data-category="vision">
+                    <div class="card-header">
+                        <span class="card-num">6</span>
+                        <span class="card-category">Computer Vision · Robotics · Embedded Systems</span>
+                    </div>
+                    <h3>Vision-Based Autonomous RC Car</h3>
+                    <p>Connects computer vision to physical vehicle behavior on a TurboPi platform: what the camera sees each frame directly drives how the car steers, follows, and stops.</p>
+                    <ul class="card-bullets">
+                        <li>Implemented real-time lane detection and heading correction</li>
+                        <li>Added car-following logic with distance estimation, stopping, and restart behavior</li>
+                        <li>Achieved stable tracking in real hallway tests and multi-lane simulation environments</li>
+                    </ul>
+                    <div class="card-tags card-tech"><span>Computer Vision</span><span>OpenCV</span><span>TurboPi</span><span>Real-Time Control</span></div>
+                </article>
+
+                <article class="project-card" data-category="ai">
+                    <div class="card-header">
+                        <span class="card-num">7</span>
+                        <span class="card-category">Machine Learning · Predictive Analytics</span>
+                    </div>
+                    <h3>ATL Flight Delay Prediction</h3>
+                    <p>Predicts whether domestic flights departing Atlanta will arrive at least 15 minutes late, using U.S. DOT airline performance data. Overall accuracy can hide missed delays, so the evaluation also weighs false negatives.</p>
+                    <ul class="card-bullets">
+                        <li>Cleaned and analyzed 79,928 flights, identifying delay patterns across airlines, departure times, and destinations</li>
+                        <li>Evaluated 84 logistic regression and decision tree configurations across classification thresholds</li>
+                        <li>Selected a logistic regression model with about 80% test accuracy after assessing false-negative tradeoffs</li>
+                    </ul>
+                    <div class="card-tags card-tech"><span>Logistic Regression</span><span>Decision Trees</span><span>Classification</span><span>U.S. DOT Data</span></div>
+                </article>
+
+                <article class="project-card" data-category="ai">
+                    <div class="card-header">
+                        <span class="card-num">8</span>
+                        <span class="card-category">AI Applications · Conversational AI</span>
+                    </div>
+                    <h3>NBA AI Voice Assistant</h3>
+                    <p>Voice agent that answers NBA questions in natural conversation. I built it on LiveKit Agents, connecting a speech pipeline to an OpenAI language model that can call Python tools for structured answers.</p>
+                    <ul class="card-bullets">
+                        <li>Full voice loop: Silero voice activity detection with OpenAI speech-to-text, LLM, and text-to-speech</li>
+                        <li>Wrote function-calling tools covering championships, team records, positions, and team legends for all 30 teams</li>
+                        <li>Tools answer from curated data stored in the project rather than a live stats API</li>
+                    </ul>
+                    <div class="card-tags card-tech"><span>Python</span><span>LiveKit Agents</span><span>OpenAI</span><span>Silero VAD</span><span>Function Calling</span></div>
+                    <a href="https://github.com/BK-Alister/NBA-AI-Assistant" target="_blank" rel="noopener" class="card-link" aria-label="View NBA AI Voice Assistant on GitHub">View on GitHub ↗</a>
+                </article>
+
+                <article class="project-card" data-category="ai">
+                    <div class="card-header">
+                        <span class="card-num">9</span>
+                        <span class="card-category">Machine Learning · Financial Technology</span>
                     </div>
                     <h3>Stock Price Predictor</h3>
-                    <p>Machine learning web app for stock forecasting and technical analysis with live data via Yahoo Finance API and moving average visualizations.</p>
+                    <p>Streamlit app and evaluation pipeline that predict a stock's next-day close from its previous 100 trading days. I rebuilt the evaluation to test on unseen data against a simple baseline: tomorrow's close equals today's.</p>
                     <ul class="card-bullets">
-                        <li>Interactive data exploration with Streamlit</li>
-                        <li>ML-based forecasting with trend pattern visualization</li>
+                        <li>Added a chronological 70/15/15 split, training-only scaling, and automated leakage tests on 20 years of GOOG closes</li>
+                        <li>Across 740 unseen trading days, the validation-selected ridge model scored MAE $3.19 and RMSE $4.86 against the baseline's $3.18 and $4.84, showing no measurable edge</li>
+                        <li>Exposed a failure in the original price-level forest (MAE $83.34): tree models cannot predict above prices seen in training</li>
                     </ul>
-                    <a href="#" class="card-link">View Project ↗</a>
-                </div>
+                    <figure class="card-figure">
+                        <img src="stock-test-period.png" width="1280" height="720" loading="lazy" alt="Line chart of GOOG closing prices from November 2023 to October 2026. The selected model closely follows the actual close, which rises from about $137 to a peak near $399. The original price-level forest flatlines near $146.">
+                    </figure>
+                    <p class="card-caveat">These results do not show that prices can be forecast or traded profitably.</p>
+                    <div class="card-tags card-tech"><span>Python</span><span>Scikit-learn</span><span>Streamlit</span><span>yfinance</span><span>Pandas</span><span>pytest</span></div>
+                    <a href="https://github.com/BK-Alister/Stock_MASTER" target="_blank" rel="noopener" class="card-link" aria-label="View Stock Price Predictor on GitHub">View on GitHub ↗</a>
+                </article>
+            </div>
+
+            <div class="project-more" id="project-more" hidden>
+                <button type="button" class="btn-ghost" id="view-all" aria-expanded="false" aria-controls="projects-grid">View All Projects</button>
             </div>
         </div>
     </section>
@@ -182,14 +327,26 @@
             <div class="exp-list">
                 <div class="project-card">
                     <div class="card-header">
+                        <span class="card-num">Aug 2026 – Present</span>
+                        <div class="card-tags"><span>Capgemini</span><span>Clemson, SC</span></div>
+                    </div>
+                    <h3>Industry-Sponsored AI Capstone</h3>
+                    <ul class="card-bullets">
+                        <li>Independently built a React/TypeScript dashboard integrating Azure-based AI agents for customer recommendations, search, and analytics across 96,000+ records.</li>
+                        <li>Integrated customer, purchase, and review data from Azure SQL through REST APIs and a secure Express.js backend.</li>
+                        <li>Delivered a working MVP to Capgemini stakeholders and incorporated their feedback into ongoing development.</li>
+                    </ul>
+                </div>
+                <div class="project-card">
+                    <div class="card-header">
                         <span class="card-num">May 2026 – Aug 2026</span>
                         <div class="card-tags"><span>Trimble Inc.</span><span>Atlanta, GA</span></div>
                     </div>
                     <h3>Software Engineering Intern</h3>
                     <ul class="card-bullets">
-                        <li>Designed and built an Electron.js desktop prototype integrating multiple Trimble web applications into a unified native shell with isolated application sessions and dynamic app registration.</li>
-                        <li>Debugged and shipped production fixes across the Trimble Pay monorepo, driving changes through GitHub pull requests, code reviews, testing, and established release workflows.</li>
-                        <li>Engineered Gainsight PX analytics across Trimble Pay workflows, implementing frontend selectors and resolving multi-route tracking conflicts through wildcard URL matching and AND/OR exclusion logic.</li>
+                        <li>Built and internally demonstrated an Electron and React desktop prototype unifying multiple web applications while maintaining isolated user sessions.</li>
+                        <li>Shipped production frontend fixes across the Trimble Pay monorepo through testing, pull requests, code reviews, and release workflows.</li>
+                        <li>Improved Gainsight PX interaction tracking by resolving multi-route conflicts with selectors, wildcard URL matching, and exclusion rules, providing more reliable product-usage data.</li>
                     </ul>
                 </div>
                 <div class="project-card">
@@ -199,9 +356,9 @@
                     </div>
                     <h3>Audiogram Deep Learning Researcher</h3>
                     <ul class="card-bullets">
-                        <li>Built a robust end-to-end ML pipeline integrating YOLO detection, coordinate calibration, and preprocessing to digitize handwritten clinical audiograms with high reliability.</li>
-                        <li>Engineered advanced OCR and Vision-LLM extraction systems to automatically interpret speech scores and output structured, Health Record ready data.</li>
-                        <li>Led deployment and documentation of the framework, using Python, PyTorch/TensorFlow, OpenCV, Git, and HPC workflows.</li>
+                        <li>Developed a YOLO/OpenCV computer vision pipeline with preprocessing and calibration to digitize handwritten clinical audiograms and reduce manual data entry.</li>
+                        <li>Achieved 83.1% field-level accuracy with Qwen Vision LLM for speech score extraction, evaluating OCR and Vision-LLM approaches in research involving about 400 audiograms.</li>
+                        <li>Built Python workflows converting unstructured audiogram measurements into machine-readable records.</li>
                     </ul>
                 </div>
                 <div class="project-card">
@@ -211,23 +368,26 @@
                     </div>
                     <h3>Digital Solutions Intern</h3>
                     <ul class="card-bullets">
-                        <li>Integrated a chatbot into Oldcastle's B2B e-commerce platform to reduce manual support load by automating order tracking, FAQs, and customer support workflows.</li>
-                        <li>Assisted with backend improvements and API integrations within the BigCommerce ecosystem to support scalable commerce operations.</li>
-                        <li>Analyzed user behavior using Lucky Orange to identify friction points, improve site performance, and guide UX decisions.</li>
+                        <li>Proposed an AI chatbot to automate B2B e-commerce customer inquiries, presenting its technical approach, projected ROI, and operational benefits to Oldcastle leadership, including the CEO.</li>
+                        <li>Supported BigCommerce API integrations to improve e-commerce functionality and streamline existing business workflows.</li>
+                        <li>Analyzed customer behavior in Lucky Orange to identify usability friction and recommend UX/UI improvements to the online purchasing experience.</li>
                     </ul>
                 </div>
             </div>
             <div class="resume-wrap">
                 <div class="resume-preview">
-                    <img src="resume.jpg" alt="Blake McAlister Resume" class="resume-img">
+                    <a href="Blake%20McAlister%20Resume%20Comp.pdf" target="_blank" rel="noopener" aria-label="Open Blake McAlister's resume as a PDF">
+                        <img src="resume.jpg" alt="Preview of Blake McAlister's one-page resume" class="resume-img" loading="lazy">
+                    </a>
                 </div>
                 <div class="resume-side">
-                    <p class="resume-desc">Computer Science student at Clemson University with hands-on experience across AI, systems programming, computer vision, and full-stack development.</p>
-                    <a href="Blake McAlister Resume Comp.pdf" download class="btn-primary">Download My Resume!</a>
+                    <p class="resume-desc">Computer Science student at Clemson University with an Artificial Intelligence minor and experience across software engineering, AI-powered applications, and machine learning research.</p>
+                    <a href="Blake%20McAlister%20Resume%20Comp.pdf" download="Blake McAlister Resume Comp.pdf" class="btn-primary">Download My Resume!</a>
                     <div class="resume-meta">
                         <div class="meta-row"><span>Degree</span><span>B.S. Computer Science</span></div>
+                        <div class="meta-row"><span>Minor</span><span>Artificial Intelligence</span></div>
                         <div class="meta-row"><span>University</span><span>Clemson University</span></div>
-                        <div class="meta-row"><span>Focus</span><span>AI · ML · Systems</span></div>
+                        <div class="meta-row"><span>Graduation</span><span>December 2026</span></div>
                     </div>
                 </div>
             </div>
@@ -241,27 +401,28 @@
             <div class="contact-layout">
                 <div class="contact-left">
                     <h2 class="section-heading">Let's build<br><em>something great.</em></h2>
-                    <p>Open to internships, research opportunities, and interesting projects. Reach out any time.</p>
+                    <p>Open to full-time opportunities in Solutions Engineering, AI Engineering, Machine Learning Engineering, and Software Engineering. Recruiters, engineering managers, and technical teams are welcome to reach out.</p>
                     <div class="contact-links-list">
                         <a href="mailto:blake.mcalister25@gmail.com">blake.mcalister25@gmail.com</a>
-                        <a href="tel:4047895463">(404) 789-5463</a>
-                        <a href="https://www.linkedin.com/in/blakemcalister25/" target="_blank">LinkedIn ↗</a>
+                        <a href="tel:+14047895463">(404) 789-5463</a>
+                        <a href="https://www.linkedin.com/in/bmcalister25/" target="_blank" rel="noopener">LinkedIn ↗</a>
+                        <a href="https://github.com/BK-Alister" target="_blank" rel="noopener">GitHub ↗</a>
                     </div>
                 </div>
                 <form class="contact-form" action="https://formspree.io/f/xzzzebeq" method="POST">
                     <div class="form-row">
                         <div class="form-group">
-                            <label>Name</label>
-                            <input type="text" name="name" placeholder="Your name" required>
+                            <label for="contact-name">Name</label>
+                            <input id="contact-name" type="text" name="name" placeholder="Your name" autocomplete="name" required>
                         </div>
                         <div class="form-group">
-                            <label>Email</label>
-                            <input type="email" name="email" placeholder="your@email.com" required>
+                            <label for="contact-email">Email</label>
+                            <input id="contact-email" type="email" name="email" placeholder="your@email.com" autocomplete="email" required>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label>Message</label>
-                        <textarea name="message" placeholder="What's on your mind?" rows="5" required></textarea>
+                        <label for="contact-message">Message</label>
+                        <textarea id="contact-message" name="message" placeholder="What's on your mind?" rows="5" required></textarea>
                     </div>
                     <button type="submit" class="btn-primary btn-full">Send Message →</button>
                 </form>
@@ -269,18 +430,20 @@
         </div>
     </section>
 
+    </main>
+
     <footer>
         <div class="footer-inner">
             <span class="nav-logo">BM<span class="blink">_</span></span>
             <p>© 2026 Blake McAlister. All rights reserved.</p>
             <div class="footer-links">
-                <a href="https://www.linkedin.com/in/blakemcalister25/" target="_blank">LinkedIn</a>
-                <a href="https://github.com/BK-Alister" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/bmcalister25/" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://github.com/BK-Alister" target="_blank" rel="noopener">GitHub</a>
                 <a href="mailto:blake.mcalister25@gmail.com">Email</a>
             </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
