@@ -16,8 +16,8 @@
     <meta name="twitter:card" content="summary">
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230a0a0a'/%3E%3Ctext x='16' y='22' font-family='monospace' font-size='16' font-weight='700' text-anchor='middle' fill='%23c8f135'%3EBM%3C/text%3E%3C/svg%3E">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=2">
 </head>
 <body>
 
@@ -151,28 +151,28 @@
 
             <div class="projects-grid" id="projects-grid">
 
-                <article class="project-card featured" data-category="ai fullstack">
+                <article class="project-card" data-category="ai fullstack">
                     <div class="card-header">
                         <span class="card-num">1</span>
                         <span class="card-category">AI Engineering · Full-Stack · Cloud · Solutions</span>
                     </div>
                     <h3>Capgemini ShopBot Commerce</h3>
-                    <p>Industry-sponsored capstone: an AI-powered retail platform that brings customer analytics, purchasing behavior, and recommendations into one application. I independently built the dashboard and the secure backend layer that connects it to Azure-hosted services.</p>
+                    <p>Industry-sponsored capstone: an AI-powered retail platform bringing customer analytics, purchasing behavior, and recommendations into one application.</p>
                     <dl class="card-stats">
-                        <div><dt>Unique shoppers in project dataset</dt><dd>96,096</dd></div>
-                        <div><dt>Orders in project dataset</dt><dd>99,441</dd></div>
+                        <div><dt>Shoppers in dataset</dt><dd>96,096</dd></div>
+                        <div><dt>Orders in dataset</dt><dd>99,441</dd></div>
                     </dl>
                     <ul class="card-bullets">
-                        <li>Built the React/TypeScript dashboard, including Customer 360, purchase, review, and customer directory views</li>
-                        <li>Created an Express.js backend-for-frontend connecting the UI to Azure Functions and Azure SQL over REST APIs</li>
-                        <li>Contributed to the recommendation agent and took ownership of analytics-agent development</li>
-                        <li>Delivered a working MVP to Capgemini stakeholders and fed their feedback into ongoing development</li>
+                        <li>Independently built the React/TypeScript dashboard, including Customer 360, purchase, review, and directory views</li>
+                        <li>Created an Express.js backend-for-frontend connecting the UI to Azure Functions and Azure SQL</li>
+                        <li>Contributed to the recommendation agent and owned analytics-agent development</li>
+                        <li>Delivered a working MVP to Capgemini stakeholders</li>
                     </ul>
-                    <div class="card-tags card-tech"><span>React</span><span>TypeScript</span><span>Node.js</span><span>Express.js</span><span>Python</span><span>Azure Functions</span><span>Azure SQL</span><span>REST APIs</span><span>AI Agents</span></div>
+                    <div class="card-tags card-tech"><span>React</span><span>TypeScript</span><span>Express.js</span><span>Azure Functions</span><span>Azure SQL</span><span>AI Agents</span></div>
                     <span class="card-note">Private sponsor repository · MVP in active development</span>
                 </article>
 
-                <article class="project-card featured" data-category="fullstack">
+                <article class="project-card" data-category="fullstack">
                     <div class="card-header">
                         <span class="card-num">2</span>
                         <span class="card-category">Solutions Engineering · Full-Stack · Data Visualization</span>
@@ -187,32 +187,25 @@
                     <div class="card-tags card-tech"><span>JavaScript</span><span>Leaflet.js</span><span>Geospatial Visualization</span><span>Pitch Deck</span></div>
                 </article>
 
-                <article class="project-card featured" data-category="ai">
+                <article class="project-card" data-category="ai">
                     <div class="card-header">
                         <span class="card-num">3</span>
                         <span class="card-category">Machine Learning · Bioinformatics · Predictive Analytics</span>
                     </div>
                     <h3>Tumor Surface Target Prioritization</h3>
-                    <p>Independently developed computational biology project. It predicts how strongly lung adenocarcinoma (LUAD) cell lines depend on each gene using public expression and copy-number data, then ranks held-out cell-surface genes for further research.</p>
-                    <ol class="card-flow" aria-label="Research workflow">
-                        <li>DepMap, TCGA, GISTIC &amp; HPA data</li>
-                        <li>Gene table, 14 features</li>
-                        <li>Frozen 70/15/15 split</li>
-                        <li>Baselines vs. boosted models</li>
-                        <li>Ranked surface genes</li>
-                    </ol>
+                    <p>Independently developed project that predicts how strongly lung adenocarcinoma (LUAD) cell lines depend on each gene from public data, then ranks cell-surface genes for further research.</p>
                     <dl class="card-stats">
                         <div><dt>Genes labeled</dt><dd>17,930</dd></div>
                         <div><dt>LUAD cell lines</dt><dd>53</dd></div>
-                        <div><dt>Surface-gene Spearman ρ</dt><dd>0.50</dd></div>
+                        <div><dt>Surface-gene ρ</dt><dd>0.50</dd></div>
                     </dl>
                     <ul class="card-bullets">
-                        <li>Built a reproducible Python pipeline with download logging, a seeded split, and a test set scored only once</li>
-                        <li>Kept CRISPR dependency data out of the features; the dataset build fails if a derived column appears</li>
-                        <li>L1-loss gradient boosting with 3× surface-gene weighting reached ρ = 0.50 (95% CI 0.41–0.57) on 321 held-out surface genes and cut overall MAE to 0.159 from a 0.184 baseline; a stricter cytoband-grouped split gave ρ ≈ 0.42</li>
+                        <li>Built a reproducible Python pipeline joining DepMap, TCGA, GISTIC, and HPA data</li>
+                        <li>Kept CRISPR data out of the features; the build fails if a derived column appears</li>
+                        <li>L1-loss gradient boosting reached ρ = 0.50 (95% CI 0.41–0.57) on 321 held-out surface genes, and ρ ≈ 0.42 on a stricter cytoband split</li>
                     </ul>
-                    <p class="card-caveat">Rankings are computational evidence for prioritizing research. They are not experimentally validated targets or clinical findings.</p>
-                    <div class="card-tags card-tech"><span>Python</span><span>Scikit-learn</span><span>Pandas</span><span>SciPy</span><span>Gradient Boosting</span><span>DepMap</span><span>TCGA</span></div>
+                    <p class="card-caveat">Computational evidence only, not validated targets or clinical findings.</p>
+                    <div class="card-tags card-tech"><span>Python</span><span>Scikit-learn</span><span>Pandas</span><span>DepMap</span><span>TCGA</span></div>
                     <a href="https://github.com/BK-Alister/Tumor-Surface-Target-Prioritization" target="_blank" rel="noopener" class="card-link" aria-label="View Tumor Surface Target Prioritization on GitHub">View on GitHub ↗</a>
                 </article>
 
@@ -298,17 +291,17 @@
                         <span class="card-category">Machine Learning · Financial Technology</span>
                     </div>
                     <h3>Stock Price Predictor</h3>
-                    <p>Streamlit app and evaluation pipeline that predict a stock's next-day close from its previous 100 trading days. I rebuilt the evaluation to test on unseen data against a simple baseline: tomorrow's close equals today's.</p>
+                    <p>Predicts a stock's next-day close from its previous 100 trading days. I rebuilt the evaluation to test on unseen data against a baseline of tomorrow's close equaling today's.</p>
                     <ul class="card-bullets">
-                        <li>Added a chronological 70/15/15 split, training-only scaling, and automated leakage tests on 20 years of GOOG closes</li>
-                        <li>Across 740 unseen trading days, the validation-selected ridge model scored MAE $3.19 and RMSE $4.86 against the baseline's $3.18 and $4.84, showing no measurable edge</li>
-                        <li>Exposed a failure in the original price-level forest (MAE $83.34): tree models cannot predict above prices seen in training</li>
+                        <li>Added a chronological split, training-only scaling, and automated leakage tests</li>
+                        <li>Over 740 unseen GOOG trading days, the selected ridge model scored MAE $3.19 and RMSE $4.86 vs. the baseline's $3.18 and $4.84: no measurable edge</li>
+                        <li>The original price-level forest scored MAE $83.34 because trees cannot predict above training prices</li>
                     </ul>
                     <figure class="card-figure">
                         <img src="stock-test-period.png" width="1280" height="720" loading="lazy" alt="Line chart of GOOG closing prices from November 2023 to October 2026. The selected model closely follows the actual close, which rises from about $137 to a peak near $399. The original price-level forest flatlines near $146.">
                     </figure>
-                    <p class="card-caveat">These results do not show that prices can be forecast or traded profitably.</p>
-                    <div class="card-tags card-tech"><span>Python</span><span>Scikit-learn</span><span>Streamlit</span><span>yfinance</span><span>Pandas</span><span>pytest</span></div>
+                    <p class="card-caveat">Not evidence of forecasting or trading skill.</p>
+                    <div class="card-tags card-tech"><span>Python</span><span>Scikit-learn</span><span>Streamlit</span><span>yfinance</span><span>pytest</span></div>
                     <a href="https://github.com/BK-Alister/Stock_MASTER" target="_blank" rel="noopener" class="card-link" aria-label="View Stock Price Predictor on GitHub">View on GitHub ↗</a>
                 </article>
             </div>
@@ -444,6 +437,6 @@
         </div>
     </footer>
 
-    <script src="scripts.js"></script>
+    <script src="scripts.js?v=2"></script>
 </body>
 </html>
