@@ -609,10 +609,11 @@ footer p { font-family: var(--mono); font-size: 0.7rem; color: var(--muted); }
     .nav-links { display: none; }
     .hamburger { display: flex; }
 
-    .hero-grid { padding: 6rem 1.25rem 3rem; gap: 2rem; }
+    /* #home already provides the 2rem side padding. */
+    .hero-grid { padding: 6rem 0 3rem; gap: 2rem; }
 
-    /* Name fits on 2 lines, neither line overflows */
-    .hero-name { font-size: 12.5vw; line-height: 1.1; }
+    /* "McAlister" is about 7.5em wide in Syne 800, so size it to the content width. */
+    .hero-name { font-size: calc((100vw - 4rem) / 7.6); line-height: 1.1; }
 
     .hero-tag { font-size: 0.6rem; letter-spacing: 0.06em; }
     .hero-sub { font-size: 0.95rem; }
